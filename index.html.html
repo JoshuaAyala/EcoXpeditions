@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/413325b7ce.js"
+            crossorigin="anonymous"></script>
+        <title>Galería</title>
+        <style>
+            *{
+                max-width: 100%;
+            }
+
+            nav{
+                width: 100%;
+                box-shadow: 0px 0px 1px black;
+            }
+
+            nav h3{
+                text-align: center;
+                padding: 30px;
+            }
+
+            .galeria {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+            }
+
+            .imagen {
+                position: relative;
+                overflow: hidden;
+                border: 2px solid #ddd;
+            }
+
+            .imagen img {
+                width: 100%;
+                height: auto;
+            }
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                color: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: 0;
+                transition: opacity 0.3s ease;
+            }
+
+            .overlay p{
+                margin: 20px;
+            }
+
+            .imagen:hover .overlay {
+                opacity: 1;
+            }
+            footer {
+                background-color: #f1f1f1;
+                padding: 20px;
+                text-align: center;
+                position: absolute;
+                width: 100%;
+            }
+
+
+            footer p {
+                margin: 0;
+                color: #333;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <h3>Galería y Arte</h3>
+        </nav>
+        <section class="galeria">
+            <div class="imagen">
+                <img src="https://lamenteesmaravillosa.com/wp-content/uploads/2018/08/noche-estrellada-768x480.jpg" alt="Imagen 1">
+                <div class="overlay">"La noche estrellada" es una famosa pintura de Vincent van Gogh, creada en 1889. Presenta un paisaje nocturno con un cielo turbulento lleno de espirales de estrellas y una luna brillante, mientras cipreses oscuros contrastan en primer plano, creando una escena emotiva y enigmática.</div>
+            </div>
+            <div class="imagen">
+                <img src="https://www.eehar.csic.es/wp-content/uploads/2022/04/CFP_-Villas-y-ocio-nobiliario-imagen-768x480.jpg" alt="Imagen 2">
+                <div class="overlay"><p>"Banquet in the Park" es una pintura del artista renacentista Hieronymus Bosch. Esta obra muestra un festivo banquete campestre con figuras humanas y seres fantásticos, representando la visión surrealista y simbólica característica del estilo de Bosch.</p></div>
+            </div>
+            <div class="imagen">
+                <img src="https://www.fundacionbancosantander.com/content/dam/fundacion-banco-santander/es/imagenes/cultura/arte/coleccion/obras/A-1025-S_el_fin_del_mundi_alta-1920.jpg.transform/rendition-sm/image.jpg" alt="Imagen 2">
+                <div class="overlay"><p>"El triunfo de la Muerte" es una pintura realizada por el pintor renacentista Pieter Brueghel el Viejo. Esta obra presenta una impactante representación de la muerte personificada y su dominio sobre la humanidad. </p></div>
+            </div>
+            <div class="imagen">
+                <img src="https://editorial.aristeguinoticias.com/wp-content/uploads/2021/07/Frida-768x480.png" alt="Imagen 2">
+                <div class="overlay"><p>Aspecto del óleo sobre metal “Autorretrato en la frontera entre México y los Estados Unidos”, que fue pintado por Frida a los 25 años.</p></div>
+            </div>
+            <div class="imagen">
+                <img src="https://www.artdex.com/wp-content/uploads/2016/03/800px-Sunday_Afternoon-768x480.jpg" alt="Imagen 2">
+                <div class="overlay"><p>
+                    "Un domingo en la isla de La Grande Jatte" es una icónica pintura de Georges Seurat, creada en 1884-1886. Es famosa por su estilo puntillista y representa a personas relajadas en un parque en la isla de La Grande Jatte en París.</p></div>
+            </div>
+            <div class="imagen">
+                <img src="https://alfayomega.es/wp-content/uploads/2020/04/ArteQuedarseCasa4.jpg" alt="Imagen 2">
+                <div class="overlay"><p>"El retorno del hijo pródigo" es una famosa pintura de Rembrandt, creada en 1668. Representa la emotiva escena bíblica del hijo pródigo arrepintiéndose y regresando a su hogar, abrazado por su padre.</p></div>
+            </div>
+        </section>
+    </body>
+    <footer>
+        <p>© 2023 Joshua Flores Ayala. Todos los derechos reservados.</p>
+    </footer>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</html>
